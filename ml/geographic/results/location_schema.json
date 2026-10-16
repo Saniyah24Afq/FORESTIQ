@@ -1,0 +1,8 @@
+{
+    "description": "Schema for storing geographic forest observations.",
+    "record_example": {
+        "latitude": 19.076,
+        "longitude": 72.8777,
+        "source": "satellite"
+    }
+}

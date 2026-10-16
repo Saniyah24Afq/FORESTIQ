@@ -1,0 +1,689 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap");
+
+.camera-page {
+  min-height: 100vh;
+  background: #f5f8f5;
+  color: #123b2a;
+  font-family: "Inter", sans-serif;
+}
+
+/* HEADER */
+
+.camera-header {
+  height: 76px;
+  background: #fff;
+  border-bottom: 1px solid #e2e9e3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 42px;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.camera-left {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+
+.camera-back {
+  width: 42px;
+  height: 42px;
+  border: 1px solid #dce6df;
+  border-radius: 12px;
+  background: #fff;
+  color: #27754a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.camera-back:hover {
+  background: #eef8f1;
+  transform: translateX(-2px);
+}
+
+.camera-brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.camera-brand > div {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: #d96d91;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.camera-brand section strong {
+  display: block;
+  font-family: "Manrope", sans-serif;
+  font-size: 15px;
+}
+
+.camera-brand section span {
+  display: block;
+  color: #87988e;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-top: 3px;
+}
+
+.camera-online {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #557263;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.camera-online span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #26a35b;
+  box-shadow: 0 0 0 4px #e5f5e9;
+}
+
+/* MAIN */
+
+.camera-main {
+  max-width: 1380px;
+  margin: auto;
+  padding: 48px 42px 70px;
+}
+
+.camera-intro {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 35px;
+  margin-bottom: 32px;
+}
+
+.camera-kicker {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #d86b8e;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  margin-bottom: 10px;
+}
+
+.camera-intro h1 {
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(32px, 4vw, 48px);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  margin: 0;
+}
+
+.camera-intro p {
+  max-width: 680px;
+  color: #71847a;
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 13px 0 0;
+}
+
+.camera-status {
+  min-width: 225px;
+  padding: 14px 17px;
+  background: #fff;
+  border: 1px solid #dfe8e1;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.camera-status > svg {
+  color: #d96d91;
+}
+
+.camera-status div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.camera-status strong {
+  font-size: 12px;
+}
+
+.camera-status small {
+  color: #87968d;
+  font-size: 10px;
+}
+
+/* WORKSPACE */
+
+.camera-workspace {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+
+.camera-panel {
+  background: #fff;
+  border: 1px solid #dfe8e1;
+  border-radius: 22px;
+  padding: 24px;
+  min-height: 535px;
+  box-shadow: 0 12px 35px rgba(31, 75, 48, 0.045);
+}
+
+.camera-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.camera-title > svg {
+  color: #d96d91;
+}
+
+.camera-title span {
+  color: #9baaa1;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.17em;
+}
+
+.camera-title h2 {
+  margin: 5px 0 0;
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+}
+
+/* UPLOAD */
+
+.camera-upload {
+  min-height: 350px;
+  border: 1.5px dashed #ddb4c2;
+  border-radius: 18px;
+  background: #fff9fb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.camera-upload:hover {
+  background: #fff3f7;
+  border-color: #d77a99;
+}
+
+.camera-upload-icon {
+  width: 62px;
+  height: 62px;
+  border-radius: 18px;
+  background: #f9e8ef;
+  color: #d4678b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 17px;
+}
+
+.camera-upload h3 {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  font-size: 17px;
+}
+
+.camera-upload p {
+  margin: 8px 0 17px;
+  color: #84958b;
+  font-size: 12px;
+}
+
+.camera-upload button,
+.camera-analyze {
+  border: 0;
+  border-radius: 10px;
+  background: #d4678b;
+  color: #fff;
+  padding: 11px 18px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.2s ease;
+}
+
+.camera-upload button:hover,
+.camera-analyze:hover {
+  background: #c25478;
+  transform: translateY(-1px);
+}
+
+.camera-upload small {
+  color: #9aa8a0;
+  font-size: 9px;
+  margin-top: 14px;
+}
+
+/* SELECTED */
+
+.camera-selected {
+  min-height: 350px;
+}
+
+.camera-preview {
+  height: 320px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 17px;
+  background: #edf2ee;
+}
+
+.camera-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.camera-preview button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.94);
+  color: #d24f45;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.camera-file {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.camera-file div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.camera-file strong {
+  max-width: 330px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 12px;
+}
+
+.camera-file span {
+  color: #899990;
+  font-size: 10px;
+}
+
+.camera-file > svg {
+  color: #258d50;
+}
+
+/* INFO */
+
+.camera-info {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #edf1ed;
+  margin-top: 18px;
+  padding-top: 15px;
+}
+
+.camera-info span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #7d9084;
+  font-size: 10px;
+}
+
+.camera-info svg {
+  color: #d4678b;
+}
+
+/* EMPTY */
+
+.camera-empty {
+  min-height: 390px;
+  border-radius: 18px;
+  background: #faf8f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+}
+
+.camera-empty-icon {
+  width: 68px;
+  height: 68px;
+  border-radius: 20px;
+  background: #f9e9ef;
+  color: #d4678b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 17px;
+}
+
+.camera-empty h3 {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+}
+
+.camera-empty p {
+  max-width: 400px;
+  color: #819188;
+  font-size: 12px;
+  line-height: 1.6;
+  margin: 9px 0 20px;
+}
+
+.camera-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 7px;
+}
+
+.camera-tags span {
+  padding: 8px 10px;
+  background: #fff;
+  border: 1px solid #eadfe3;
+  border-radius: 9px;
+  color: #7b6d73;
+  font-size: 10px;
+}
+
+/* ANALYSIS */
+
+.camera-analyze {
+  box-shadow: 0 8px 20px rgba(212, 103, 139, 0.2);
+}
+
+.camera-progress {
+  width: min(360px, 100%);
+  height: 7px;
+  background: #eadfe3;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.camera-progress div {
+  width: 100%;
+  height: 100%;
+  background: #d4678b;
+  animation: cameraProgress 1.8s ease;
+}
+
+@keyframes cameraProgress {
+  from {
+    width: 5%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+.camera-spin {
+  animation: cameraSpin 1s linear infinite;
+}
+
+@keyframes cameraSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* RESULT */
+
+.camera-result {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.camera-success {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: #edf8f0;
+  border: 1px solid #d8eedf;
+  color: #23834d;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.camera-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 9px;
+}
+
+.camera-metrics div {
+  padding: 12px;
+  background: #f9faf9;
+  border: 1px solid #e4ebe5;
+  border-radius: 11px;
+}
+
+.camera-metrics span {
+  display: block;
+  color: #899a90;
+  font-size: 9px;
+  margin-bottom: 5px;
+}
+
+.camera-metrics strong {
+  font-family: "Manrope", sans-serif;
+  font-size: 15px;
+}
+
+.camera-result-image {
+  height: 220px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.camera-result-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.camera-result-image div {
+  position: absolute;
+  inset: 0;
+}
+
+.camera-result-image span,
+.camera-result-image b {
+  position: absolute;
+  padding: 7px 10px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.camera-result-image span {
+  top: 13px;
+  left: 13px;
+  background: rgba(39, 126, 74, 0.9);
+}
+
+.camera-result-image b {
+  right: 13px;
+  bottom: 13px;
+  background: rgba(212, 103, 139, 0.92);
+}
+
+.camera-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: #fff9ed;
+  border: 1px solid #f2e4c6;
+  color: #9e7539;
+}
+
+.camera-note p {
+  margin: 0;
+  font-size: 9px;
+  line-height: 1.5;
+}
+
+/* PIPELINE */
+
+.camera-pipeline {
+  margin-top: 24px;
+  background: #fff;
+  border: 1px solid #dfe8e1;
+  border-radius: 22px;
+  padding: 25px;
+}
+
+.camera-pipeline h2 {
+  margin: 4px 0 22px;
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+}
+
+.camera-pipeline-grid {
+  display: grid;
+  grid-template-columns: 1fr 30px 1fr 30px 1fr 30px 1fr;
+  align-items: center;
+}
+
+.camera-pipeline-grid > div {
+  min-height: 110px;
+  padding: 14px;
+  border: 1px solid #e2eae3;
+  border-radius: 14px;
+  background: #fafcfb;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.camera-pipeline-grid > div b {
+  color: #a1aea6;
+  font-size: 9px;
+}
+
+.camera-pipeline-grid > div svg {
+  color: #d4678b;
+}
+
+.camera-pipeline-grid strong {
+  font-size: 12px;
+}
+
+.camera-pipeline-grid small {
+  color: #89988f;
+  font-size: 9px;
+}
+
+.camera-pipeline-grid > i {
+  height: 1px;
+  background: #cedbd1;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1050px) {
+  .camera-main {
+    padding: 35px 25px 55px;
+  }
+
+  .camera-header {
+    padding: 0 25px;
+  }
+
+  .camera-workspace {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .camera-intro {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .camera-pipeline-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .camera-pipeline-grid > i {
+    width: 1px;
+    height: 18px;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .camera-header {
+    padding: 0 16px;
+  }
+
+  .camera-main {
+    padding: 28px 16px 45px;
+  }
+
+  .camera-panel,
+  .camera-pipeline {
+    padding: 17px;
+    border-radius: 17px;
+  }
+
+  .camera-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .camera-info {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

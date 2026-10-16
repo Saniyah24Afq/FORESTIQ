@@ -1,0 +1,37 @@
+
+# Python environment
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Frontend dependencies and build
+node_modules/
+dist/
+.vite/
+
+# Dataset - keep large dataset off GitHub
+backend/dataset/
+**/EuroSAT_RGB.zip
+
+# Temporary files
+*.log
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Python build files
+build/
+*.egg-info/
